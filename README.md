@@ -1,4 +1,4 @@
-# expodal
+# explodal
 ## The Most Explosive Modal on The Web.
 Demo: https://jessekorzan.github.io/expodal/
 
