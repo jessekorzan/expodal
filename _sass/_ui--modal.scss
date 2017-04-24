@@ -13,6 +13,9 @@ $bezier: .97,.33,0,-0.1;
     opacity: 0;
     pointer-events: none;
     transition: all 260ms 260ms ease-in-out;
+    @media screen and (max-width: 800px) { 
+        padding: $spacer/2;
+    }
     > div:first-child {
         position: relative;
         background: $white;
