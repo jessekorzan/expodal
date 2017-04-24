@@ -1,0 +1,63 @@
+
+$bezier: .97,.33,0,-0.1;
+
+.ui--modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 260ms 260ms ease-in-out;
+    > div:first-child {
+        position: relative;
+        background: $white;
+        color: $black;
+        width: 100%;
+        min-width: 320px;
+        max-width: 580px;
+        min-height: 320px;
+        padding: $spacer;
+        box-shadow: 0px 15px 35px 15px rgba(#000, 0.2);
+        opacity: 0;
+        transform: scale(0.5);
+        transition: all 260ms 0ms cubic-bezier($bezier);
+    }
+    .ui--close {
+        position: absolute;
+        top: $spacer/2;
+        right: $spacer/2;
+    }
+    p {
+        margin-top: 0;
+    }
+    .bg {   
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0px;
+        width: 100vw;
+        height: 100vh;
+        img {
+           object-fit: cover;
+           width: 100vw;
+           height: 100vh;
+        }
+    }
+}
+
+.ui--modal:target {
+    opacity: 1;
+    pointer-events: all;
+    transition: all 260ms 0ms ease-in-out;
+    > div {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 200ms 300ms cubic-bezier($bezier);
+    }
+}

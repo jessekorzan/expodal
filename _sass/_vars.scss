@@ -1,0 +1,25 @@
+// custom colours (old prototype)
+$white : #FFFFFF;
+$black : #575265;
+$blue : #31aae3;
+$green: #34af43;
+$red: crimson;
+$yellow: yellow;
+
+// type system
+$font-size-base : 16px;
+$line-height: 1.625em;
+
+// breakpoints
+$screen-xl : 1680px;
+$screen-lg : 1380px;
+$screen-md : 1024px;
+$screen-sm : 600px;
+$screen-xs : 414px;
+
+// layout
+$spacer : 48px;
+
+// styles
+$radius : 3px;
+$keyline : 1px solid lighten($black, 55%);

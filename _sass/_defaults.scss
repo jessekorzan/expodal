@@ -1,0 +1,43 @@
+// opinionated defaults
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    position: relative;
+	background: #000;
+	margin: 0;
+	font-family: "proxima-nova", sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	color: lighten($blue, 40%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: 400;
+}
+h1 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+hr {
+    border: none;
+    border-bottom: $keyline;
+    margin: $spacer 0;
+}
+p {
+    font-size: 1.25em;
+}
+a {
+    text-decoration: none;
+    color: $blue;
+    transition: all 260ms ease-in-out;
+    &:hover {
+        color: darken($blue, 25%);
+    }
+}
+            

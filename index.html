@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>explodal</title>
+    
+    <meta charset="utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="msapplication-tap-highlight" content="no" />
+	
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://use.typekit.net/ynx6jrm.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+    <div class="app">
+        <div class="canvas">
+            <div>
+                <h1>The Explodal</h1>
+                <h2 class="huge">The Most Explosive Modal on the Web</h2>
+                <h2>100% CSS and one tiny line of JS.</h2>
+                <a href="#explode" class="ui--button" onclick="document.getElementById('boooom').setAttribute('src', 'assets/img/explode-med.gif');">Explode Modal</a>
+                <!-- necessary little bit of JS to make sure the animated GIF play (not affected by caching). -->
+            </div>
+        </div>
+    </div>
+    <div id="explode" class="ui--modal explode">
+        <div>
+            <a href="#close" class="material-icons ui--close">clear</a>
+            <h3 class="huge">Boooooom!!!</h3>
+            <p>Somebody, quick! Get a bucket and a mop. There's a mind bomb to clean-up.</p>
+            <a href="#close" class="ui--button alt">dismiss</a>
+        </div>
+        <div class="bg">
+            <img src="assets/img/explode-med.gif" id="boooom">
+        </div>  
+    </div>
+    <!-- GA -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-37045209-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>

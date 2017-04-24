@@ -1,0 +1,3 @@
+.container {
+    grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+}

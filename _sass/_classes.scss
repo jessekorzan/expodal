@@ -1,0 +1,95 @@
+.app, .wireframe {
+    position: relative;
+    height: 100vh;
+}
+.app {
+    padding: $spacer;
+    //max-width: 1280px;
+    display: table;
+    width: 100%;
+    text-align: center;
+    .canvas {
+        display: table-cell;
+        vertical-align: middle;
+        > div {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+    }
+
+}
+.huge {
+    font-size: 3.5em;
+    font-weight: 800;
+}
+.label {
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    overflow: hidden;
+    background: rgba($blue, 0.25);
+    display: inline-block;
+    border-radius: 4px;
+    color: $blue;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    &.alert {
+        
+        background: linear-gradient(lighten($red, 30%), lighten($red, 20%));
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.grid {
+    position: relative;
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-column-gap: $spacer/4;
+    grid-row-gap: $spacer/4;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+button, .ui--button {
+    position: relative;
+    border: none;
+    display: inline-block;
+    background: darken($blue, 25%);
+    border: 2px solid darken($blue, 25%);
+    color: lighten($blue, 25%);
+    text-transform: uppercase;
+    padding: $spacer/4 $spacer/2;
+    margin: 0 $spacer/8 $spacer/8 0;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    &.icon {
+        padding-right: $spacer;
+        padding-left: $spacer/4;
+        .material-icons {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            line-height: 0.5em;
+            padding: 0;
+            padding: 0 0 0 $spacer/4;
+            float: right;
+        }
+    }
+    &.alt {
+        background: none;
+        border-color: $blue;
+        color: $blue;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background: $blue;
+        border-color: $blue;
+        color: $white;
+    }
+}
